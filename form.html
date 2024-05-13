@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="form.css">
-    <title>Formulir Calon Pegawai</title>
+    <title>Biodata</title>
     <script>
         function validateForm() {
             var phone = document.getElementById('hp').value;
@@ -23,7 +23,8 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="form.html">Form</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="hobi.html">Hobi</a></li>
+                    <li><a href="about_me.html">About Me</a></li>
                 </ul>
             </nav>
         </div>
@@ -32,12 +33,17 @@
     <div class="container">
         <form onsubmit="return validateForm()">
             <fieldset>
-                <legend>Formulir Calon Pegawai JYPEntertainment</legend>
+                <legend>Biodata Mahasiswa</legend>
 
                 <div class="form-group">
                     <label for="nama">Nama :</label>
                     <input type="text" id="nama" name="nama">
                 </div>
+
+                <div class="form-group">
+                    <label for="nim">NIM:</label>
+                    <input type="text" id="nim" name="nim">
+                </div><br>
 
                 <div class="form-group">
                     <label for="tempat_lahir">Tempat Lahir :</label>
@@ -69,44 +75,28 @@
                 </div>
 
                 <div class="form-group">
-                    <label>Status:</label>
-                    <p>
-                        <label><input type="radio" id="lajang" name="status" value="lajang" required>Lajang</label>
-                        <label><input type="radio" id="menikah" name="status" value="menikah">Menikah</label>
-                    </p>
-
-                </div>
-
-                <div class="form-group">
-                    <label for="pendidikan_terakhir">Pendidikan Terakhir:</label>
-                    <select id="pendidikan_terakhir" name="pendidikan_terakhir" required>
-                        <option value="">--Pilih Pendidikan Terakhir--</option>
-                        <option value="sd">SD</option>
-                        <option value="smp">SMP</option>
-                        <option value="sma">SMA/SMK</option>
-                        <option value="d3">Diploma (D3)</option>
-                        <option value="s1">Sarjana (S1)</option>
-                        <option value="s2">Magister (S2)</option>
-                        <option value="s3">Doktor (S3)</option>
+                    <label for="fakultas">Fakultas:</label>
+                    <select id="fakultas" name="fakultas" required>
+                        <option value="">--Pilih Fakultas--</option>
+                      <option value="Ekonomi dan Bisnis">Ekonomi dan Bisnis</option>
+                      <option value="Agama Islam">Agama Islam</option>
+                      <option value="Teknik">Teknik</option>
+                      <option value="Ilmu Sosial dan Ilmu Politik">Ilmu Sosial dan Ilmu Politik</option>
+                      <option value="Kedokteran dan Ilmu Kesehatan">Kedokteran dan Ilmu Kesehatan</option>
+                      <option value="Pertanian">Pertanian</option>
+                      <option value="Hukum">Hukum</option>
+                      <option value="Pendidikan Bahasa">Pendidikan Bahasa</option>
                     </select>
-                </div>
+                </div><br>
 
                 <div class="form-group">
-                    <label for="jabatan">Jabatan yang Diinginkan:</label>
-                    <select id="jabatan" name="jabatan" required>
-                        <option value="">--Pilih Jabatan--</option>
-                        <option value="developer">Developer</option>
-                        <option value="designer">Designer</option>
-                        <option value="project_manager">Project Manager</option>
-                        <option value="product_manager">Product Manager</option>
-                        <option value="sales">Sales</option>
-                        <option value="marketing">Marketing</option>
-                    </select>
-                </div>
+                    <label for="prodi">Program Studi:</label>
+                    <input type="text" id="prodi" name="prodi">
+                  </div><br>
 
                 <div class="form-group">
-                    <label for="alasan">Apa yang Membuat Kami harus memilih anda?</label>
-                    <textarea id="alasan" name="alasan" rows="5" cols="60" placeholder="Tulis jawaban Anda di sini"></textarea>
+                    <label for="alasan">Motto Hidup</label>
+                    <textarea id="motto" name="motto" rows="5" cols="60" placeholder="Apa Motto Hidup Anda"></textarea>
                 </div>
 
                 <div class="form-group">
